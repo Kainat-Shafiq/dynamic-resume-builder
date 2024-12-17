@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Resume Form Section -->
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <!-- Personal Details -->
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" rows="4" placeholder="Enter a short summary about yourself"></textarea>
+
+            <!-- Education -->
+            <h2>Education</h2>
+            <label for="education">Degree/Institution:</label>
+            <input type="text" id="education" placeholder="Example: B.Sc Computer Science, XYZ University" required>
+
+            <!-- Work Experience -->
+            <h2>Work Experience</h2>
+            <label for="experience">Job Title/Company:</label>
+            <input type="text" id="experience" placeholder="Example: Front-End Developer at ABC Company" required>
+
+            <!-- Skills -->
+            <h2>Skills</h2>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="Example: HTML, CSS, JavaScript" required>
+
+            <button type="button" id="generate-btn">Generate Resume</button>
+        </form>
+    </div>
+
+    <!-- Resume Display Section -->
+    <div class="resume-output" id="resume-output">
+        <!-- Dynamic content will appear here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
